@@ -1,0 +1,16 @@
+.parent {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.parent::-webkit-scrollbar {
+    display: none;
+}
+
+.child {
+    scroll-snap-align: start;
+    height: 100vh;
+}
