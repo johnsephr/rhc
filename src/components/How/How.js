@@ -12,7 +12,7 @@ const styles = {
 }
 
 const How = props => {
-    return <div style={{...globals.slideContainer, justifyContent: 'space-between'}}>
+    return <div style={{...globals.slideContainer, justifyContent: 'space-between', height: 'calc(100% - 50px)'}}>
         <div>
             <h2 style={globals.header}>How</h2> to get started<br />
 

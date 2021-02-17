@@ -6,7 +6,6 @@ const styles = {
         height: 50
     },
     links: {
-        
         textAlign: 'center',
         margin: '0 auto'
     }
