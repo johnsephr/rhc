@@ -4,17 +4,10 @@ import React, { } from 'react';
 import globals from '../../styles/globals';
 
 // styles
-const styles = {
-    root: {
-        width: '70%',
-        margin: '20% 0',
-        minWidth: '300px',
-        margin: 'auto'
-    }
-}
+const styles = {}
 
 const Who = props => {
-    return <div style={styles.root}>
+    return <div style={globals.slideContainer}>
         <h2 style={globals.header}>WHO</h2> is eligible<br />
 
         <p className=''>The following entities are eligible for funding provided through the Rural Health Care (RHC) Program</p>
