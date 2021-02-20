@@ -3,6 +3,9 @@ import React, { } from 'react';
 // global styles
 import globals from '../../styles/globals';
 
+// components
+import SlideIndicator from '../SlideIndicator/SlideIndicator';
+
 // styles
 const styles = {
     body: {
@@ -29,6 +32,8 @@ const What = props => {
                 <p>The Telecommunications (Telcom) Program provides reduced rates to rural healthcare providers (HPCs) for telecommunications and voice services for the use of telemedicine and telehealth. Eligible services are discounted at the <strong>difference in cost</strong> between <strong>urban</strong> and <strong>rural</strong> areas in your state.</p>
             </section>
         </div>
+        
+        <SlideIndicator type='only_down' />
     </div>
 };
 

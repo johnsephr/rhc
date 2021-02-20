@@ -2,6 +2,7 @@ import React, { } from 'react';
 
 // components
 import Footer from '../Footer/Footer';
+import SlideIndicator from '../SlideIndicator/SlideIndicator';
 
 // global styles
 import globals from '../../styles/globals';
@@ -21,7 +22,8 @@ const How = props => {
             </div>
         </div>
 
-        {/* footer here */}
+        <SlideIndicator type='only_up' />
+
         <Footer />
     </div>
 };

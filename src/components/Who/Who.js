@@ -3,6 +3,9 @@ import React, { } from 'react';
 // global styles
 import globals from '../../styles/globals';
 
+// components
+import SlideIndicator from '../SlideIndicator/SlideIndicator';
+
 // styles
 const styles = {
     body: {
@@ -37,6 +40,8 @@ const Who = props => {
 medical schools</li>
             </ul>
         </div>
+
+        <SlideIndicator type='down_up' />
     </div>
 };
 

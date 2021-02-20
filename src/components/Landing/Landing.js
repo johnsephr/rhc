@@ -3,6 +3,9 @@ import React from 'react';
 // global styles
 import globals from '../../styles/globals';
 
+// components
+import SlideIndicator from '../SlideIndicator/SlideIndicator';
+
 // styles
 const styles = {
     text: {
@@ -26,6 +29,8 @@ const Landing = () => {
             <p style={styles.text}>AND</p>
             <p style={styles.text}>RISK FREE</p>
         </div>
+
+        <SlideIndicator type={'landing'} />
     </div>
 };
 
