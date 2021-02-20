@@ -1,3 +1,7 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .parent {
     scroll-snap-type: y mandatory;
     height: 100vh;

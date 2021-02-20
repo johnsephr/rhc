@@ -6,7 +6,9 @@ import { FiArrowUp, FiArrowDown } from "react-icons/fi";
 // styles
 const styles = {
     landingArrow: {
-        
+        position: 'absolute',
+        bottom: 0,
+        left: 0
     },
     arrowUp: {
 

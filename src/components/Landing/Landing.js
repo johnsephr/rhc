@@ -9,9 +9,10 @@ import SlideIndicator from '../SlideIndicator/SlideIndicator';
 // styles
 const styles = {
     text: {
-        fontSize: '2rem',
+        fontSize: '2.5rem',
         padding: '1rem',
-        textAlign: 'left'
+        textAlign: 'left',
+        lineHeight: '31.28px'
     },
     textContainer: {
         margin: 'auto 0'
@@ -19,7 +20,7 @@ const styles = {
 }
 
 const Landing = () => {
-    return <div style={{...globals.slideContainer, paddingTop: 0}}>
+    return <div style={{...globals.slideContainer, paddingTop: 0, width: '78%'}}>
         <div style={styles.textContainer}>
             <p style={styles.text}>RURAL</p>
             <p style={styles.text}>HEALTHCARE</p>
