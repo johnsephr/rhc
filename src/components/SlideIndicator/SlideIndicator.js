@@ -15,7 +15,7 @@ const styles = {
     landingArrowSm: {
         fontSize: '3rem',
         position: 'absolute',
-        bottom: '7%',
+        bottom: '4%',
         left: 0
     },
     arrowUpLg: {
@@ -28,19 +28,19 @@ const styles = {
         fontSize: '3rem',
         position: 'absolute',
         right: 0,
-        top: '5%'
+        top: '4%'
     },
     arrowDownLg: {
         fontSize: '3rem',
         position: 'absolute',
         right: 0,
-        bottom: '5%'
+        bottom: '7%'
     },
     arrowDownSm: {
         fontSize: '3rem',
         position: 'absolute',
         right: 0,
-        bottom: '5%'
+        bottom: '4%'
     },
 }
 
