@@ -34,7 +34,7 @@ const IndexPage = () => {
         <section className='child'><Who /></section>
         <section className='child'><How /></section>
         
-        <SlideIndicator scrollTop={scrollTop} offsetHeight={offsetHeight} />
+        {/* <SlideIndicator scrollTop={scrollTop} offsetHeight={offsetHeight} /> */}
       </div>
     </div>
   );

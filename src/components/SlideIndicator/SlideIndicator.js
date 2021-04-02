@@ -1,39 +1,74 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
+import { useMediaPredicate } from "react-media-hook";
 
 // icons
 import { FiArrowUp, FiArrowDown } from "react-icons/fi";
 
 // styles
 const styles = {
-    landingArrow: {
+    landingArrowLg: {
+        fontSize: '3rem',
         position: 'absolute',
-        bottom: 0,
+        bottom: '7%',
         left: 0
     },
-    arrowUp: {
-
+    landingArrowSm: {
+        fontSize: '3rem',
+        position: 'absolute',
+        bottom: '7%',
+        left: 0
     },
-    arrowDown: {
-
-    }
+    arrowUpLg: {
+        fontSize: '3rem',
+        position: 'absolute',
+        right: 0,
+        top: '7%'
+    },
+    arrowUpSm: {
+        fontSize: '3rem',
+        position: 'absolute',
+        right: 0,
+        top: '5%'
+    },
+    arrowDownLg: {
+        fontSize: '3rem',
+        position: 'absolute',
+        right: 0,
+        bottom: '5%'
+    },
+    arrowDownSm: {
+        fontSize: '3rem',
+        position: 'absolute',
+        right: 0,
+        bottom: '5%'
+    },
 }
 
 // arrow landing
-const LandingArrow = () => <FiArrowDown style={styles.landingArrow} />;
+const LandingArrow = () => {
+    const biggerThan1000 = useMediaPredicate("(min-width: 1000px)");
+    return <FiArrowDown style={biggerThan1000 ? styles.landingArrowLg : styles.landingArrowSm} />;
+}
 
 // arrow up
-const ArrowUp = () => <FiArrowUp style={styles.arrowUp} />;
+const ArrowUp = () => {
+    const biggerThan1000 = useMediaPredicate("(min-width: 1000px)");
+    return <FiArrowUp style={biggerThan1000 ? styles.arrowUpLg : styles.arrowUpSm} />;
+}
 
 // arrow down
-const ArrowDown = () => <FiArrowDown style={styles.arrowDown} />;
+const ArrowDown = () => {
+    const biggerThan1000 = useMediaPredicate("(min-width: 1000px)");
+    return <FiArrowDown style={biggerThan1000 ? styles.arrowDownLg : styles.arrowDownSm} />;
+}
 
 // arrow down up
 const ArrowDownUp = () => {
     return (
-        <div>
+        <Fragment>
             <FiArrowUp style={styles.arrowUp} />
             <FiArrowDown style={styles.arrowDown} />
-        </div>
+        </Fragment>
     );
 };
 

@@ -8,8 +8,14 @@ import SlideIndicator from '../SlideIndicator/SlideIndicator';
 
 // styles
 const styles = {
+    header: {
+        marginTop: '8%',
+        fontSize: '1.4rem'
+    },
     body: {
-        width: '50%'
+        // width: '50%',
+        overflow: 'scroll',
+        fontWeight: 400
     },
     list: {
         listStyle: 'none',
@@ -23,7 +29,7 @@ const styles = {
 
 const Who = props => {
     return <div style={globals.slideContainer}>
-        <div><h2 style={globals.header}>WHO</h2> is eligible</div>
+        <div style={styles.header}><h2 style={globals.header}>WHO</h2> is eligible</div>
 
         <div style={styles.body}>
             <p><strong>The following entities are eligible for funding provided through the Rural Health Care (RHC) Program:</strong></p>
@@ -41,7 +47,7 @@ medical schools</li>
             </ul>
         </div>
 
-        <SlideIndicator type='down_up' />
+        <SlideIndicator type='only_down' />
     </div>
 };
 
