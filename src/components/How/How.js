@@ -17,10 +17,12 @@ const styles = {
     bodyLg: {
         overflow: 'scroll',
         width: '50%',
-        margin: '0 auto'
+        margin: '0 auto',
+        overflow: 'hidden' /* Hide scrollbars */
     },
     bodySm: {
         overflow: 'scroll',
+        overflow: 'hidden' /* Hide scrollbars */
     }
 }
 

@@ -15,7 +15,8 @@ const styles = {
     body: {
         // width: '50%',
         overflow: 'scroll',
-        fontWeight: 400
+        fontWeight: 400,
+        overflow: 'hidden' /* Hide scrollbars */
     },
     list: {
         listStyle: 'none',

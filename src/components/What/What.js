@@ -17,7 +17,8 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         overflow: 'scroll',
-        fontWeight: 400
+        fontWeight: 400,
+        overflow: 'hidden' /* Hide scrollbars */
     },
     paragraphLg: {
         width: '75%',
